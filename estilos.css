@@ -50,6 +50,7 @@ section {
   background-color: #f48fb1;
   border-color: #880e4f;
   color: #fff;
+  text-decoration: line-through; /* Tachar texto al aprobar */
 }
 
 .ramo.bloqueado {
