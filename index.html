@@ -2,23 +2,51 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Malla Interactiva - Plan de Estudios</title>
+  <title>Malla Interactiva Medicina</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <h1>Plan de Estudios de Medicina</h1>
+  <h1>Malla Interactiva - Plan de Estudios Medicina</h1>
 
   <div id="malla">
-    <section id="ano-1"><h2>1° Año</h2></section>
-    <section id="ano-2"><h2>2° Año</h2></section>
-    <section id="ano-3"><h2>3° Año</h2></section>
-    <section id="ano-4"><h2>4° Año</h2></section>
-    <section id="ano-5"><h2>5° Año</h2></section>
-    <section id="ano-6"><h2>6° Año</h2></section>
-    <section id="optativas"><h2>Optativas</h2></section>
-    <section id="habilidades"><h2>Habilidades Generales</h2></section>
+
+    <!-- 1er Año -->
+    <div class="anio">
+      <h2>1° Año</h2>
+      <div class="ramos">
+        <div class="ramo" id="r1" data-desbloquea="r2">Articulación básico clínico comunitaria I</div>
+        <div class="ramo" id="r2" data-desbloquea="r7">Bases biológicas de la práctica médica I</div>
+        <div class="ramo" id="r3" data-desbloquea="r11,r6">Historia y salud en Argentina y Latinoamérica</div>
+        <div class="ramo" id="r4" data-desbloquea="r10">Salud ambiental</div>
+        <div class="ramo" id="r5" data-desbloquea="r9">Fundamentos de la salud comunitaria</div>
+        <div class="ramo" id="r6" data-desbloquea="r12">Evaluación Integradora I</div>
+        <div class="ramo bloqueado" id="r7" data-desbloquea="r13">Bases biológicas de la práctica médica II</div>
+        <div class="ramo bloqueado" id="r8" data-desbloquea="r14">Articulación básico clínico comunitaria II</div>
+        <div class="ramo bloqueado" id="r9" data-desbloquea="r15">Sujetos, instituciones y sociedad en el campo de la salud</div>
+        <div class="ramo bloqueado" id="r10" data-desbloquea="r16">Alteridad y salud</div>
+        <div class="ramo bloqueado" id="r11" data-desbloquea="r17">Comunicación en el campo de la salud</div>
+        <div class="ramo bloqueado" id="r12" data-desbloquea="r18">Evaluación Integradora II</div>
+      </div>
+    </div>
+
+    <!-- 2do Año -->
+    <div class="anio">
+      <h2>2° Año</h2>
+      <div class="ramos">
+        <div class="ramo bloqueado" id="r13" data-desbloquea="r19">Bases biológicas de la práctica médica III</div>
+        <div class="ramo bloqueado" id="r14" data-desbloquea="r20">Articulación básico clínico comunitaria III</div>
+        <div class="ramo bloqueado" id="r15" data-desbloquea="r21">Salud sexual</div>
+        <div class="ramo bloqueado" id="r16" data-desbloquea="r22">Discapacidad y rehabilitación basada en la comunidad</div>
+        <div class="ramo bloqueado" id="r17" data-desbloquea="r23,r24">Producción y análisis crítico del conocimiento en la salud</div>
+        <div class="ramo bloqueado" id="r18" data-desbloquea="r25">Evaluación Integradora III</div>
+      </div>
+    </div>
+
+    <!-- (Puedes continuar el resto siguiendo la misma estructura) -->
+
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
